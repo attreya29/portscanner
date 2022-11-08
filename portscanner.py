@@ -1,6 +1,4 @@
 import socket
-import termcolor
-
 
 def scan(target, ports):
      print('\n' + 'Starting Scan for' + str(target))
