@@ -5,7 +5,6 @@ def scan(target, ports):
      for port in range(1,ports):
            scan_port(target, ports)
 
-
 def scan_port(ipaddress, port): 
   try:
     sock = socket.socket()
@@ -14,7 +13,6 @@ def scan_port(ipaddress, port):
     sock.close()
   except:
     pass
-
 targets = input("[*] Enter Targets to Scan(separate them by comas,):")
 ports =int(input("[*] Enter how many ports you want to scan:"))
 if ',' in targets:
